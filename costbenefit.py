@@ -31,8 +31,18 @@ insurance= float(input("What would be the cost of your parking and registration?
 #repairs for a year
 repairs= float(input("How much do you think repairs of the car would cost for the year? $"))
 
+#price of using an uber instead of buying a car over the course of a year, using 2 trips per day, 5 days a week and 47 weeks per year
+uber=float(input("What is the cost of an uber per trip ? $"))
+uber= uber * 2 * 5 * 47
 #total amount that would be spent on the car over the course of a year
 totalcar= repairs + insurance + parkcost + gascost + resale
+
+saved1 = totalcar-uber
+saved2= uber-totalcar
+
+if uber > totalcar:
+    print(f'')
+
 
 
 
