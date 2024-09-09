@@ -34,12 +34,20 @@ repairs= float(input("How much do you think repairs of the car would cost for th
 #price of using an uber instead of buying a car over the course of a year, using 2 trips per day, 5 days a week and 47 weeks per year
 uber=float(input("What is the cost of an uber per trip ? $"))
 uber= uber * 2 * 5 * 47
+
+#checking if my math aligns with the example
+print(f'This is the total cost of using an uber over a year ${uber}')
+
 #total amount that would be spent on the car over the course of a year
 totalcar= repairs + insurance + parkcost + gascost + resale
 
 #amount saved for each case
 saved1 = totalcar-uber
 saved2= uber-totalcar
+
+
+#checking if my math aligns with the example
+print(f'This is the total cost of buying and using the car over a year ${totalcar}')
 
 #condition statement based on which one had an higer cost
 if uber > totalcar:
