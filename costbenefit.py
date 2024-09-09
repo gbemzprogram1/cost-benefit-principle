@@ -15,7 +15,7 @@ kilometers=float(input("How many kilometers do you get per liter? "))
 totalkilo= kilometers * 2 * 5 * 47
 
 #the base price of gas
-basecost=float(input("How much does gas cost per litre? "))
+basecost=float(input("How much does gas cost per litre? $"))
 
 #total cost of gas for a year
 gascost= totalkilo/kilometers *basecost
@@ -43,10 +43,10 @@ saved2= uber-totalcar
 
 #condition statement based on which one had an higer cost
 if uber > totalcar:
-    print(f'You will save ${saved1} by getting a car instead of an uber over a year.')
+    print(f'You will save ${saved2} by getting a car instead of an uber over a year.')
     
 elif totalcar > uber:
-    print(f'You will save ${saved2} by using an uber instead of getting a car over a year.')  \
+    print(f'You will save ${saved1} by using an uber instead of getting a car over a year.')  \
 
 else:
     print("Since the price of getting a car and using an uber over a year is the same, you can do anything you feel like as of now as the same amount would be spent regardless.")  
