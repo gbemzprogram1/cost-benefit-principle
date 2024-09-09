@@ -26,7 +26,7 @@ parkcost= float(input("How much does parking cost for a day? $"))
 parkcost=parkcost * 5 * 47
 
 #insurance and registration
-insurance= float(input("What would be the cost of your parking and registration? $"))
+insurance= float(input("What would be the cost of your insurance and registration? $"))
 
 #repairs for a year
 repairs= float(input("How much do you think repairs of the car would cost for the year? $"))
