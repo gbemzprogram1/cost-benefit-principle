@@ -14,8 +14,9 @@ kilometers=float(input("How many kilometers do you get per liter? "))
 totalkilo= kilometers * 2 * 5 * 47
 
 #the base price of gas
-gascost=float(input("How much does gas cost per litre? "))
+basecost=float(input("How much does gas cost per litre? "))
 
+gascost= totalkilo/kilometers *basecost
 
 
 
